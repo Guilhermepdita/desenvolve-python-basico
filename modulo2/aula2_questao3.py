@@ -1,11 +1,22 @@
-'''3) Dadas duas variáveis v1 = 10 e v2 = 20, utilize uma terceira variável para trocar os valores entre as duas variáveis.
-Ou seja, ao final v1 terá o valor de v2, e v2 o valor de v1. 
-Você deve usar uma variável auxiliar de troca, não podendo atribuir os novos valores diretamente.'''
+#Entrada
+idade = int(input('Digite sua idade: '))
+jogou = input('Já jogou pelo menos 3 jogos de tabuleiro? ')
+venceu = int(input('Quantos jogos já venceu? '))
 
-v1 = 10
-v2 = 20
-troca = v2 - v1
-v2 = troca
-print(v2)
-v1 = troca + v2
-print(v1)
+#Processamento
+#A - tiver entre 16 e 18 anos
+#B - já tiver jogado pelo menos 3 jogos
+#C - já ter vencido pelo menos 1 jogo 
+
+a = idade > 15 and idade <= 18
+b = True or False
+if jogou == "sim":
+    b = True
+else:
+    b = False
+c = venceu >= 1
+
+apto = a and b and c
+#Saída
+print(a, b, c)
+print(f'Apto para ingressar no clube de jogos de tabuleiro: {apto}')

@@ -1,17 +1,16 @@
-'''2) Transforme o seguinte algoritmo em código. Lembre-se das funções print e type que já conhecemos de forma geral.
-Armazene o texto "o resultado é"  em uma variável, o valor 10 em outra variável, e o valor 3.5 numa terceira variável.
-Some os valores da segunda e terceira variável e armazene em outra variável.
-Imprima todas as variáveis na ordem de criação e imprima também seus tipos.'''
+#entrada de dados
+#idade juliana
+#idade de cris
+idade_juliana = int(input("Qual é a idade de Juliana?"))
+idade_cris    = int(input("Qual é a idade de Cris?"))
 
-resultado = "o resultado é"
-v1 = 10
-v2 = 3.5
-v3 = v1 + v2
-print(resultado)
-print(type(resultado))
-print(v1)
-print(type(v1))
-print(v2)
-print(type(v2))
-print(v3)
-print(type(v3))
+#processamento
+#true se ambos forem maior de idade
+#<expressão1> = juliana é maior de idade
+#<expressão2> = cris é maior de idade
+# <expressão1>and<expressão2>
+#false em qualquer outro caso.
+podem_entrar = idade_juliana >= 18 or idade_cris >= 18
+
+#saída
+print(podem_entrar)
